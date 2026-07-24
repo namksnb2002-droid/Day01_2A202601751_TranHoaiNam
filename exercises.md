@@ -54,7 +54,7 @@ nhiều token hơn tiếng Anh cùng độ dài?**
     Ước lượng theo công thức Part 1 (số từ / 0.75): $100 / 0.75 \approx \mathbf{133}$ tokens.
     Đếm thực tế bằng tiktoken (cl100k_base): $\mathbf{212}$ tokens.
     Chênh lệch: Số token đếm bằng tiktoken cao hơn ước lượng công thức khoảng $59.4\%$ (chênh lệch rất lớn).
-    2. Nguyên nhân tiếng Việt tốn nhiều token hơn tiếng Anh cùng độ dài:
+2. Nguyên nhân tiếng Việt tốn nhiều token hơn tiếng Anh cùng độ dài:
     Bảng từ vựng (Vocabulary) ưu tiên tiếng Anh: Bộ mã hóa BPE (Byte-Pair Encoding) của OpenAI được huấn luyện chủ yếu trên dữ liệu tiếng Anh. Các từ tiếng Anh phổ biến thường được mã hóa thành 1 token duy nhất.
     Xử lý ký tự có dấu (Diacritics): Tiếng Việt chứa nhiều nguyên âm có dấu (như á, à, ả, ã, ạ, ê, ơ, ư...). Bộ tokenizer thường phải tách các từ/âm tiết tiếng Việt thành nhiều mảnh sub-word hoặc chuỗi byte nhỏ lẻ, khiến $1$ từ tiếng Việt trung bình tốn từ $1.5$ đến $2.5$ tokens.
 
@@ -81,7 +81,7 @@ với delay cố định giống nhau?**
 **Bạn chọn persona gì cho trợ lý của mình? Viết lại system prompt đó và giải
 thích 1–2 lựa chọn từ ngữ quan trọng trong prompt (ví dụ: vì sao yêu cầu
 "trả lời ngắn gọn", vì sao chỉ định ngôn ngữ...):**
-> *Persona đã chọn: Trợ lý lập trình viên Python cao cấp (Senior Python Mentor).*
+> Persona đã chọn: Trợ lý lập trình viên Python cao cấp (Senior Python Mentor).
 
     System prompt:
     "Bạn là một trợ lý lập trình viên Python giàu kinh nghiệm. Hãy trả lời ngắn gọn, tập trung trực tiếp vào bản chất vấn đề, cung cấp ví dụ code minh họa tối giản và luôn phản hồi bằng tiếng Việt."
@@ -100,7 +100,7 @@ thiện cụ thể và mô tả ngắn cách triển khai:**
 
 ## Danh Sách Kiểm Tra Nộp Bài
 
-- [ ] `python grade.py` — xem điểm tự động, mục tiêu ≥ 75/100
-- [ ] Cả 4 checkpoint pytest đều pass
-- [ ] Tất cả 9 câu trong file này đã được trả lời
-- [ ] Đã copy bài làm vào folder `solution/` và zip theo hướng dẫn README
+- [x] `python grade.py` — xem điểm tự động, mục tiêu ≥ 75/100
+- [x] Cả 4 checkpoint pytest đều pass
+- [x] Tất cả 9 câu trong file này đã được trả lời
+- [x] Đã copy bài làm vào folder `solution/` và zip theo hướng dẫn README
